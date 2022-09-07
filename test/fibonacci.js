@@ -9,4 +9,10 @@ describe('Fibonacci Numbers', () => {
   it('1', () => {
     assert.equal(fibonacci(1), 1);
   });
+  it('5', () => {
+    assert.equal(fibonacci(5), 5);
+  });
+  it('10', () => {
+    assert.equal(fibonacci(10), 55);
+  });
 });

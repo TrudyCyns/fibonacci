@@ -2,16 +2,15 @@
 /* eslint-disable no-plusplus */
 // Nabasirye Gertrude, Ssozi Martin Rukundo.
 module.exports = function fibonacci(num) {
-  let a = num;
-  let b = 0;
-  let temp;
+  let a = 0;
+  let b = 1;
+  let c = num;
 
-  while (num >= 0) {
-    temp = a;
-    a += b;
-    b = temp;
-    num--;
+  for (let i = 2; i <= num; i++) {
+    c = a + b;
+    a = b;
+    b = c;
   }
 
-  return b;
+  return c;
 };
